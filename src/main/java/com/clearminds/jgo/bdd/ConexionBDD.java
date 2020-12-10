@@ -1,5 +1,6 @@
 package com.clearminds.jgo.bdd;
 
+import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.sql.Connection;
@@ -28,6 +29,8 @@ public class ConexionBDD {
 			e.printStackTrace();
 			valorPropiedad = null;
 		}
+		File f =new File("conexion.properties");
+		System.out.println("Ruta: "+f.getAbsoluteFile());
 
 		return valorPropiedad;
 
